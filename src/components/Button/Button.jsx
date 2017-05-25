@@ -4,7 +4,13 @@ import classNames from 'classnames'
 import style from './button.scss'
 
 const propTypes = {
+  /**
+   * Describes the size of the button.
+   */
   size: PropTypes.string,
+  /**
+   * Describes the colors of the button.
+   */
   theme: PropTypes.string
 }
 

@@ -1,3 +1,12 @@
 module.exports = {
-  components: 'src/components/**/*.jsx'
+  sections: [
+    {
+      name: 'Introduction',
+      content: 'docs/introduction.md'
+    },
+    {
+      name: 'UI Components',
+      components: 'src/components/**/*.jsx',
+    },
+  ]
 }

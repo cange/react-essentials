@@ -2,10 +2,14 @@
 
 Summary of common components
 
-**TODO**
+## Features
 
 - setup react styleguide
+- provides React components via `import 'react-essentials'`
+- provides CSS components via `import './node_modules/react-essentials/dist/main.css'`
+
+## Todos
+- provides components SCSS via `import './node_modules/react-essentials/dist/main'`
 - handle external resources
   - SCSS variables
-  - JS packges
-- etc.
+  - JS packages
