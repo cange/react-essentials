@@ -19,29 +19,29 @@ const defaultProps = {
   theme: 'default'
 }
 
-const SIZES = {
-  large: 'btn-lg',
-  default: '',
-  small: 'btn-sm',
-  xsmall: 'btn-xs',
-}
-
-const THEMES = {
-  default: 'btn-default',
-  primary: 'btn-primary',
-  success: 'btn-success',
-  info: 'btn-info',
-  warning: 'btn-warning',
-  danger: 'btn-danger',
-}
-
 class Button extends React.Component {
+  static sizes = {
+    LARGE: 'btn-lg',
+    DEFAULT: '',
+    SMALL: 'btn-sm',
+    XSMALL: 'btn-xs',
+  }
+
+  static themes = {
+    DEFAULT: 'btn-default',
+    PRIMARY: 'btn-primary',
+    SUCCESS: 'btn-success',
+    INFO:   'btn-info',
+    WARNING: 'btn-warning',
+    DANGER: 'btn-danger',
+  }
+
   render() {
     const { size, theme } = this.props
     const wrapperClasses = classNames(
       'btn',
-      SIZES[size],
-      THEMES[theme],
+      Button.sizes[size.toUpperCase()],
+      Button.themes[theme.toUpperCase()],
     )
 
     return (
